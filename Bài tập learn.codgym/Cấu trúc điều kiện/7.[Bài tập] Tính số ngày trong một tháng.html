@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="thang" type="text">
+    <button onclick="tinhSoNgay()">Tính số ngày</button>
+    <h2 id="ketQua"></h2>
+
+    <script>
+        function tinhSoNgay() {
+            let a = +document.getElementById("thang").value
+            switch (a) {
+                case 2:
+                    document.getElementById("ketQua").innerHTML = "Tháng " + a + " có " + "28 hoặc 29 ngày";
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    document.getElementById("ketQua").innerHTML = "Tháng " + a + " có " + "30 ngày";
+                    break;
+                default:
+                    document.getElementById("ketQua").innerHTML = "Tháng " + a + " có " + "31 ngày";
+                    break;
+            }
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

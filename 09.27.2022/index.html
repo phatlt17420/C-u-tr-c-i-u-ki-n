@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let thang=+prompt("Nhập vào tháng:");
+        if (thang == 1||thang == 3){
+            alert ("Tháng "+thang+" có 31 ngày");
+        } else {
+            if (thang==2) {
+                alert("Có 28 hoặc 29 ngày");
+            } else {
+                if (thang==4 ||thang==6) {
+                    alert("Có 30 ngày");
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

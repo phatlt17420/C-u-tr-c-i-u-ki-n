@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="scene" style="border: 1;">
+    <br>
+    <button onclick="inp7()">7</button>
+    <button onclick="inp8()">8</button>
+    <button onclick="inp9()">9</button>
+    <button onclick="chia()">/</button>
+    <br>
+    <button onclick="inp4()">4</button>
+    <button onclick="inp5()">5</button>
+    <button onclick="inp6()">6</button>
+    <button onclick="nhan()">x</button>
+    <br>
+    <button onclick="inp1()">1</button>
+    <button onclick="inp2()">2</button>
+    <button onclick="inp3()">3</button>
+    <button onclick="tru()">-</button>
+    <br>
+    <button onclick="inp0()">0</button>
+    <button onclick="inpphay()">.</button>
+    <button onclick="bang()">=</button>
+    <button onclick="cong()">+</button>
+    <br> 
+    <button onclick="reset()">AC</button>
+
+
+<script>
+    function inp1() {
+        document.getElementById("scene").value +="1"
+    }
+    function inp2() {
+        document.getElementById("scene").value +="2"
+    }
+    function inp3() {
+        document.getElementById("scene").value +="3"
+    }
+    function inp4() {
+        document.getElementById("scene").value +="4"
+    }
+    function inp5() {
+        document.getElementById("scene").value +="5"
+    }
+    function inp6() {
+        document.getElementById("scene").value +="6"
+    }
+    function inp7() {
+        document.getElementById("scene").value +="7"
+    }
+    function inp8() {
+        document.getElementById("scene").value +="8"
+    }
+    function inp9() {
+        document.getElementById("scene").value +="9"
+    }
+    function inp1() {
+        document.getElementById("scene").value +="1"
+    }
+    function cong() {
+        document.getElementById("scene").value +="+"
+    }
+    function tru() {
+        document.getElementById("scene").value +="-"
+    }
+    function nhan() {
+        document.getElementById("scene").value +="*"
+    }
+    function chia() {
+        document.getElementById("scene").value +="/"
+    }
+    function reset() {
+        document.getElementById("scene").value=""
+    }
+    function bang() {
+        let tinhtoan= eval( document.getElementById("scene").value);
+        document.getElementById("scene").value=tinhtoan;
+    }
+
+
+</script>
+
+</body>
+</html>

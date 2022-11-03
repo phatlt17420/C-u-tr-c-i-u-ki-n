@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Tính điểm ĐH khối D</h2>
+    <table>
+        <tr>
+            <td>
+                <h2>Môn Toán</h2>
+            </td>
+            <td><input id="monToan" type="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Môn Văn</h2>
+            </td>
+            <td><input id="monVan" type="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Môn Anh</h2>
+            </td>
+            <td><input id="monAnh" type="text"></td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Khu vực</h2>
+            </td>
+            <td><select name="" id="KV">
+                    <option value="KV1">KV1</option>
+                    <option value="KV2-NT">KV2-NT</option>
+                    <option value="KV2">KV2</option>
+                    <option value="KV3">KV3</option>
+
+                </select></td>
+        </tr>
+        <tr>
+            <td><button onclick="tinhDiem()">Tính điểm</button></td>
+        </tr>
+        <tr>
+            <td colspan ="2">Tổng điểm ĐH khối D của bạn là: </td>
+            <td id="ketQua"></td>
+        </tr>
+    </table>
+
+    <script>
+        function tinhDiem() {
+            let tongDiem = +document.getElementById("monToan").value + +document.getElementById("monVan").value + +document.getElementById("monAnh").value;
+            switch (document.getElementById("KV").value) {
+                case "KV1":
+                    tongDiemmoi = tongDiem + 0.75;
+                    break;
+                case "KV2-NT":
+                    tongDiemmoi = tongDiem + 0.5;
+                    break;
+                case "KV2":
+                    tongDiemmoi = tongDiem + 0.25;
+                    break;
+                case "KV3":
+                    tongDiemmoi = tongDiem;
+                    break;
+            }
+            document.getElementById("ketQua").innerHTML=tongDiemmoi;
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Khởi tạo mảng là dãy số tự tạo và in ra những phần tử chia 5 dư 2
+        let arr = [1, 4, 5, 6, 7, 12, 14, 16, 17];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 5 == 2) {
+                document.write(arr[i] + '  ')
+            }
+        }
+        // Duyệt
+        // Duyệt có điều kiện
+        // Tính tổng, tính tích
+        let arr1 = [1, 4, 5, 6, 7, 12, 14, 16, 17];
+        let tong = 0;
+        for (let i = 0; i < arr.length; i++) {
+            tong += arr[i];
+        }
+        document.write("Tổng là: " + tong)
+        // Tính trung bình các phần tử chia hết cho 3.
+        let arr2 = [1, 4, 5, 6, 7, 12, 14, 16, 17];
+        let tong2 = 0;
+        let dem2 = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 3 == 0) {
+                tong2 += arr2[i];
+                dem2++;
+            }
+        }
+        document.write("Trung bình các phần tử chia hết cho 3 là" + tong2 / dem2);
+        // Nhập vào n là số phần tử của dãy số
+        // Nhập arr: lần lượt nhập các phần từ
+
+        let arr3 = [];
+        let n = +prompt("Nhập số phần tử");
+        for (let i = 0; i < n; i++) {
+            arr3 [i]= [+prompt("Nhập phần tử thứ " + i)];
+            
+        }
+        let tong3 = 0;
+        let dem3 = 0;
+        for (let i = 0; i < arr3.length; i++) {
+            if (arr3[i] % 3 == 0) {
+                tong3 += arr3[i];
+                dem3++;
+            }
+        }
+        document.write("TBC: " + tong3/dem3)
+// Tính tổng, tính tích có điều kiện
+// Đếm
+// Tính trung bình
+// Tìm max, tìm min
+// tìm vị trí
+// TÌm max thứ 2
+
+
+
+    </script>
+</body>
+
+</html>

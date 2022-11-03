@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>Nhập vào số cần kiểm tra vào ô dưới</div>
+    <input type="text" id="soKiemtra">
+    <button onclick="kt()">Kiểm tra</button>
+    <script>
+        function kt() {
+            let a = document.getElementById("soKiemtra").value;
+            if (a % 2 == 0) {
+                alert("Đây là số chẵn")
+            } else { alert("Đây là số lẻ") }
+        }
+    </script>
+
+</body>
+
+</html>

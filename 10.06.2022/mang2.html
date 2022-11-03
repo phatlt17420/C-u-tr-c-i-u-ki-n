@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Nhập vào các phần tử của mảng cho đến khi nhập 0 thì in ra số lượng phần tử chẵn.
+        let arr=[];
+        let count=0;
+        for (let i = 0;;i++) {
+            arr[i] = prompt("Nhập vào phần tử của mảng");
+            if (arr[i]==0) {
+                break;}
+            if (arr[i]%2==0) {
+                count++;
+            }
+        }
+        
+      document.write(count);
+    </script>
+
+<script>
+   let arr1 = [];
+        let count1 = 0;
+        for (let i = 0; ; i++) {
+            arr[i] = +prompt('Phần tử thứ '+(i+1));
+            if (arr1[i] == 0) {
+                alert("Số phần tử chẵn là: "+count);
+                break;
+            }
+            if (arr1[i] % 2 == 0) count++;
+        }
+
+
+</script>
+
+</body>
+</html>

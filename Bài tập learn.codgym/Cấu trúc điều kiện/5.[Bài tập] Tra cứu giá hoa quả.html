@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>TRA CỨU GIÁ HOA QUẢ</h2>
+    <input id="ten" type="text">
+    <button onclick="ktg()">Kiểm tra giá</button>
+    <h2 id="ketQua"></h2>
+
+    <script>
+        function ktg() {
+            let a = document.getElementById("ten").value;
+            switch (a) {
+                case "Ổi":
+                    document.getElementById("ketQua").innerHTML = "Ổi: 20000 VNĐ/kg";
+                    break;
+                case "Dưa Hấu":
+                    document.getElementById("ketQua").innerHTML = "Dưa Hấu: 20000 VNĐ/kg";
+                    break;
+                case "Táo":
+                    document.getElementById("ketQua").innerHTML = "Táo: 30000 VNĐ/kg";
+                    break;
+                case "Xoài":
+                    document.getElementById("ketQua").innerHTML = "Xoài: 30000 VNĐ/kg";
+                    break;
+                case "Cam":
+                    document.getElementById("ketQua").innerHTML = "Cam: 40000 VNĐ/kg";
+                    break;
+                case "Chôm Chôm":
+                    document.getElementById("ketQua").innerHTML = "Chôm Chôm: 40000 VNĐ/kg";
+                    break;
+                case "Măng Cụt":
+                    document.getElementById("ketQua").innerHTML = "Măng Cụt: 50000 VNĐ/kg";
+                    break;
+
+            }
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

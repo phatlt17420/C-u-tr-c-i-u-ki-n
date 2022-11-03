@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Nhập vào số thứ nhất: ");
+        let b = +prompt("Nhập vào số thứ nhất: ");
+        let c = +prompt("Nhập vào số thứ nhất: ");
+        let min =a;
+        function snn(a,b,c){
+            if (min<b) {
+                min=b;
+            }
+            if (min<c) {
+                min=c;
+            }
+            return min;
+        }
+        document.write(snn(a,b,c))
+    </script>
+</body>
+
+</html>

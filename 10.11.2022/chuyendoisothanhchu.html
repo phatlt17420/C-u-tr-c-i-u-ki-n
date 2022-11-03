@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // chuyển đổi số thành chữ (1-99)
+
+        let n = +prompt("Nhập vào số cần chuyển đổi: ")
+        let array = [
+            "Không",
+            "Một",
+            "Hai",
+            "Ba",
+            "Bốn",
+            "Năm",
+            "Sáu",
+            "Bảy",
+            "Tám",
+            "Chín",
+            "Mười"
+        ];
+        for (let i = 0; i < 100; i++) {
+            if (i == n) { alert(array[i]) };
+            if (n-10<0 && n%10==i) { alert (array[i])};
+            if (n-20<0 && n%10==i) { alert ("Mười"+ array[i])};
+            if (n-30<0 && n%10==i) { alert ("Hai mươi"+ array[i])};
+            if (n-40<0 && n%10==i) { alert ("Ba mươi"+ array[i])};
+            if (n-50<0 && n%10==i) { alert ("Bốn mươi"+ array[i])};
+
+
+
+
+
+
+            if (n%10==i ) {alert ("Mười "+array[i])};
+            
+        }
+
+        
+    </script>
+</body>
+
+</html>

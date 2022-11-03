@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>Amount</td>
+            <td>From Currency</td>
+            <td>To Currency</td>
+        </tr>
+        <tr>
+            <td><input id="soTien" type="text"></td>
+            <td>
+                <select name="" id="fcur">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select name="" id="tcur">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <button onclick="convert()">Convert</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="result">Result</td>
+        </tr>
+    </table>
+    <script>
+        function convert() {
+            let giaTri = +document.getElementById("soTien").value;
+            let fromCurrency = document.getElementById("fcur").value;
+            let toCurrency = document.getElementById("tcur").value;
+            if (fromCurrency == "USD" & toCurrency == "VND") {
+                let quyDoi = giaTri * 24000;
+                document.getElementById("result").innerHTML = quyDoi + document.getElementById("tcur").value;
+            } else if (fromCurrency == "VND" & toCurrency == "USD") {
+                let quyDoi = giaTri / 24000;
+                document.getElementById("result").innerHTML = quyDoi + document.getElementById("tcur").value;
+            }
+
+        }
+       
+    </script>
+</body>
+
+</html>

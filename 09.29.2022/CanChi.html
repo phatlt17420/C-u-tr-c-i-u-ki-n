@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  Nhập năm dương lịch  <input type="text" id="duonglich">
+  <button onclick="tinhtoan()">Tính can chi</button>
+<script>
+    function tinhtoan(){
+        let can1 = document.getElementById("duonglich").value%10
+        switch (can1) {
+            case 1:
+                can1="Tân";
+                break;
+            case 2:
+                can1="Nhâm";
+                break;
+            case 3:
+                can1="Quý";
+                break;
+            case 4:
+                can1="Giáp";
+                break;
+            case 5:
+                can1="Ất";
+                break;
+            case 6:
+                can1="Bính";
+                break;
+            case 7:
+                can1="Đinh";
+                break;
+            case 8:
+                can1="Mậu";
+                break;
+            case 9:
+                can1="Kỷ";
+                break;
+            case 0:
+                can1="Canh";
+                break;
+        }
+        let chi1 = document.getElementById("duonglich").value%12
+        switch (chi1) {
+            case 1:
+                chi1="Dậu";
+                break;
+            case 2:
+                chi1="Tuất";
+                break;
+            case 3:
+                chi1="Hợi";
+                break;
+            case 4:
+                chi1="Tý";
+                break;
+            case 5:
+                chi1="Sửu";
+                break;
+            case 6:
+                chi1="Dần";
+                break;
+            case 7:
+                chi1="Mẹo";
+                break;
+            case 8:
+                chi1="Thìn";
+                break;
+            case 9:
+                chi1="Thìn";
+                break;
+            case 10:
+                chi1="Ngọ";
+                break;
+            case 11:
+                chi1="Mùi";
+                break;
+            case 0:
+                chi1="Thân";
+                break;
+        }
+        let amlich = can1 +" "+ chi1;
+        alert (amlich)
+}
+</script>
+
+</body>
+</html>

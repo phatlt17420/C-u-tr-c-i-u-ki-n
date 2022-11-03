@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>CALCULATOR</h3>
+    <TABle>
+        <input id="scene" type="text" style="border: 1; width: 200px;height: 40px;">
+        <tr>
+            <td><button onclick="dauNgoac1()" style="height: 30px; width: 50px">(</button></td>
+            <td><button onclick="dauNgoac2()" style="height: 30px; width: 50px">)</button></td>
+            <td><button onclick="phanTram()" style="height: 30px; width: 50px">%</button></td>
+            <td><button onclick="reSet()" style="height: 30px; width: 50px">AC</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="so7()" style="height: 30px; width: 50px">7</button></td>
+            <td><button onclick="so8()" style="height: 30px; width: 50px">8</button></td>
+            <td><button onclick="so9()" style="height: 30px; width: 50px">9</button></td>
+            <td><button onclick="dauChia()" style="height: 30px; width: 50px">&#247</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="so4()" style="height: 30px; width: 50px">4</button></td>
+            <td><button onclick="so5()" style="height: 30px; width: 50px">5</button></td>
+            <td><button onclick="so6()" style="height: 30px; width: 50px">6</button></td>
+            <td><button onclick="dauNhan()" style="height: 30px; width: 50px">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="so1()" style="height: 30px; width: 50px">1</button></td>
+            <td><button onclick="so2()" style="height: 30px; width: 50px">2</button></td>
+            <td><button onclick="so3()" style="height: 30px; width: 50px">3</button></td>
+            <td><button onclick="dauTru()" style="height: 30px; width: 50px">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="so0()" style="height: 30px; width: 50px">0</button></td>
+            <td><button onclick="dauCham()" style="height: 30px; width: 50px">.</button></td>
+            <td><button onclick="dauBang()" style="height: 30px; width: 50px">=</button></td>
+            <td><button onclick="dauCong()" style="height: 30px; width: 50px">+</button></td>
+        </tr>
+
+    </TABle>
+    <script>
+        function dauNgoac1() {
+            document.getElementById("scene").value += "(";
+        }
+        function dauNgoac2() {
+            document.getElementById("scene").value += ")";
+        }
+        function phanTram() {
+            document.getElementById("scene").value += "/100";
+        }
+        function reSet() {
+            document.getElementById("scene").value = "";
+        }
+        function so7() {
+            document.getElementById("scene").value += "7";
+        }
+        function so8() {
+            document.getElementById("scene").value += "8";
+        }
+        function so9() {
+            document.getElementById("scene").value += "9";
+        }
+        function dauChia() {
+            document.getElementById("scene").value += "/";
+        }
+        function so4() {
+            document.getElementById("scene").value += "4";
+        }
+        function so5() {
+            document.getElementById("scene").value += "5";
+        }
+        function so6() {
+            document.getElementById("scene").value += "6";
+        }
+        function dauNhan() {
+            document.getElementById("scene").value += "*";
+        }
+        function so1() {
+            document.getElementById("scene").value += "1";
+        }
+        function so2() {
+            document.getElementById("scene").value += "2";
+        }
+        function so3() {
+            document.getElementById("scene").value += "3";
+        }
+        function dauTru() {
+            document.getElementById("scene").value += "-";
+        }
+        function so0() {
+            document.getElementById("scene").value += "0";
+        }
+        function dauCham() {
+            document.getElementById("scene").value += ".";
+        }
+        function dauCong() {
+            document.getElementById("scene").value += "+";
+        }
+        function dauBang() {
+            let tinhToan = eval(document.getElementById("scene").value);
+            document.getElementById("scene").value=tinhToan;
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
