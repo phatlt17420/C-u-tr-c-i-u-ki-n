@@ -9,15 +9,17 @@
 </head>
 
 <body>
+    <select name="" id="chon" onchange="test()">
+        <option value="Le">Le</option>
+        <option value="Tan" >Tan</option>
+        <option value="Phat">Phat</option>
+    </select>
     <script>
-        let i = 0;
-        let text = "";
-        while (i < 10) {
-            text += "The number is " + i + "<br>";
-            i++;
-            document.write(text)
+        function test() {
+            let i = document.getElementById("chon").value;
+            alert(i);
+
         }
-        
     </script>
 </body>
 
