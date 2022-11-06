@@ -12,14 +12,32 @@
     <script>
         let inRa = "<table border = '2' cellspacing='0' cellpadding='3'>"
 
-        for (let i = 1; i <= 10; i++) {
+        let i = j = 1;
+        while (i <= 10) {
             inRa = inRa + "<tr>";
-            for (let j = 1; j <= 10; j++) {
+            while (j <= 10) {
                 inRa = inRa + "<td>" + i * j + "</td>";
+                j++;
             }
+            i++;
+            inRa = inRa + "</tr>";
+            j=1;
         }
         inRa = inRa + "</table>";
-        document.write(inRa)
+
+        document.write(inRa);
+
+
+
+
+        // for (let i = 1; i <= 10; i++) {
+        //     inRa = inRa + "<tr>";
+        //     for (let j = 1; j <= 10; j++) {
+        //         inRa = inRa + "<td>" + i * j + "</td>";
+        //     }
+        // }
+        // inRa = inRa + "</table>";
+        // document.write(inRa)
 
     </script>
 </body>
